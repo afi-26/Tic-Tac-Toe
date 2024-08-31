@@ -1,0 +1,126 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: pink;
+  width: 100%;
+  max-width: 100%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.game-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: 1px solid #999;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 60px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+  color: black;  /* Added this line to set the color of X and O to black */
+}
+
+.square:focus {
+  outline: none;
+}
+
+.game-info {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+.board-size-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.board-size-buttons button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.board-size-buttons button:hover {
+  background-color: #e0e0e0;
+}
+
+.restart-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: purple;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 200px;
+}
+
+.restart-button:hover {
+  background-color: #8e44ad;
+}
+
+.restart-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(128, 0, 128, 0.5);
+}
+
+.option-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  background-color: #8fbdef;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.option-button:hover {
+  background-color: #8fbdef;
+}
+
+.option-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5);
+}
